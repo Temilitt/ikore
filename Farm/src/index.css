@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=DM+Sans:wght@300;400;500;600&display=swap');
+
+@import "tailwindcss";
+
+@theme {
+  --color-green-50:  #f0fdf4;
+  --color-green-100: #dcfce7;
+  --color-green-200: #bbf7d0;
+  --color-green-300: #86efac;
+  --color-green-400: #4ade80;
+  --color-green-500: #1B4332;
+  --color-green-600: #166534;
+  --color-green-700: #15803d;
+  --color-green-800: #0D2016;
+  --color-green-900: #0D2016;
+  --color-green-950: #052e16;
+
+  --color-gold-50:  #fffbeb;
+  --color-gold-100: #fef3c7;
+  --color-gold-200: #fde68a;
+  --color-gold-300: #fcd34d;
+  --color-gold-400: #fbbf24;
+  --color-gold-500: #D4A017;
+  --color-gold-600: #b45309;
+  --color-gold-700: #92400e;
+  --color-gold-800: #78350f;
+  --color-gold-900: #451a03;
+
+  --color-cream:    #F8F4E9;
+  --color-darkgreen: #0D2016;
+
+  --font-display: 'Space Grotesk', sans-serif;
+  --font-body:    'DM Sans', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  background: #F8F4E9;
+  color: #2D2D2D;
+  -webkit-font-smoothing: antialiased;
+}
+
+.section-tag {
+  display: inline-block;
+  font-size: 10px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #D4A017;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.section-title {
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 700;
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  color: #1B4332;
+  line-height: 1.1;
+}
+
+.btn-primary {
+  background: #1B4332;
+  color: white;
+  font-size: 11px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  padding: 14px 32px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  display: inline-block;
+  cursor: pointer;
+  border: none;
+  border-radius: 2px;
+}
+.btn-primary:hover { background: #0D2016; }
+
+.btn-gold {
+  background: #D4A017;
+  color: white;
+  font-size: 11px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  padding: 14px 32px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  display: inline-block;
+  cursor: pointer;
+  border: none;
+  border-radius: 2px;
+}
+.btn-gold:hover { background: #b45309; }
+
+.btn-outline {
+  border: 1.5px solid #1B4332;
+  color: #1B4332;
+  font-size: 11px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  padding: 14px 32px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  display: inline-block;
+  cursor: pointer;
+  background: transparent;
+  border-radius: 2px;
+}
+.btn-outline:hover { background: #1B4332; color: white; }
+
+.form-label {
+  display: block;
+  font-size: 10px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #D4A017;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.form-input {
+  width: 100%;
+  background: white;
+  border: 1.5px solid #e5e0d5;
+  padding: 12px 16px;
+  font-size: 14px;
+  color: #2D2D2D;
+  outline: none;
+  transition: border-color 0.3s ease;
+  font-family: 'DM Sans', sans-serif;
+  border-radius: 2px;
+}
+.form-input:focus { border-color: #1B4332; }
+
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.divider {
+  width: 48px;
+  height: 3px;
+  background: #D4A017;
+}
+
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: #F8F4E9; }
+::-webkit-scrollbar-thumb { background: #1B4332; border-radius: 3px; }
