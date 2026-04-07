@@ -36,4 +36,10 @@ export const getOrderById     = (id)       => api.get(`/orders/${id}`)
 export const createOrder      = (data)     => api.post('/orders', data)
 export const updateOrder      = (id, data) => api.put(`/orders/${id}`, data)
 
+const api = axios.create({
+  baseURL: import.meta.env.VITE_API_URL || 'http://localhost:5000/api',
+})
+
+console.log('API URL:', import.meta.env.VITE_API_URL)
+
 export default api
