@@ -37,7 +37,7 @@ const Marketplace = () => {
       if (sort)                params.sort     = sort
 
       const { data } = await getProduce(params)
-      setProduce(data)
+setProduce(Array.isArray(data) ? data : [])
     } catch (err) {
       console.error(err)
     } finally {
